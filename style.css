@@ -1,11 +1,13 @@
-/* Estilo geral */
+/* CONFIG GERAL */
 body{
 font-family: Arial, Helvetica, sans-serif;
-background-color:#f0f0f0;
+background:#f0f0f0;
 margin:0;
 }
 
+/* CORREÇÃO MENU */
 html{
+scroll-behavior:smooth;
 scroll-padding-top:90px;
 }
 
@@ -20,28 +22,21 @@ width:100%;
 z-index:1000;
 }
 
+/* LINKS */
 nav a{
 color:white;
-margin:15px;
 text-decoration:none;
 font-weight:bold;
 }
 
-/* tratativa menu fixo */
+/* CONTAINER */
 .container{
 width:80%;
 margin:auto;
-margin-top:80px;
+margin-top:100px;
 }
 
-/* Container central */
-.container{
-width:80%;
-margin:auto;
-margin-top:20px;
-}
-
-/* Seções */
+/* SEÇÕES */
 section{
 background:white;
 padding:30px;
@@ -49,7 +44,7 @@ margin-bottom:20px;
 border-radius:5px;
 }
 
-/* Formulário */
+/* FORM */
 input, textarea{
 width:100%;
 padding:10px;
@@ -57,59 +52,62 @@ margin-top:10px;
 margin-bottom:10px;
 }
 
+/* BOTÕES */
 button{
-padding:10px 20px;
-background:#333;
-color:white;
-border:none;
+padding:10px;
 cursor:pointer;
+border:none;
 }
 
-/* RESPONSIVIDADE PARA CELULAR */
+/* BOTÃO TEMA */
+#temaBtn{
+background:white;
+margin-left:10px;
+border-radius:5px;
+}
 
+/* MENU */
+#menu{
+display:flex;
+justify-content:center;
+gap:15px;
+}
+
+/* HAMBURGUER */
+#menuToggle{
+display:none;
+background:white;
+font-size:20px;
+}
+
+/* RESPONSIVO */
 @media (max-width:768px){
 
-/* menu vira coluna */
-nav{
-display:flex;
+#menuToggle{
+display:block;
+margin:10px auto;
+}
+
+#menu{
+display:none;
 flex-direction:column;
-align-items:center;
+width:100%;
 }
 
-/* links do menu */
-nav a{
-margin:8px 0;
+#menu.active{
+display:flex;
 }
 
-/* container ocupa quase toda a tela */
 .container{
 width:95%;
 }
 
-/* seções menores */
-section{
-padding:20px;
-}
-
-/* botão maior para toque */
 button{
 width:100%;
 }
 
 }
 
-/* botão do tema */
-#temaBtn{
-margin-left:20px;
-padding:8px 12px;
-background:white;
-color:black;
-border:none;
-cursor:pointer;
-border-radius:5px;
-}
-
-/* TEMA ESCURO */
 .dark-mode{
 background:#121212;
 color:white;
