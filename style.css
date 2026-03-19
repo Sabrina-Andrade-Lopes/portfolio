@@ -1,0 +1,108 @@
+/* Estilo geral */
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color:#f0f0f0;
+margin:0;
+}
+
+html{
+scroll-padding-top:90px;
+}
+
+/* MENU FIXO */
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Container central */
+.container{
+width:80%;
+margin:auto;
+margin-top:20px;
+}
+
+/* Seções */
+section{
+background:white;
+padding:30px;
+margin-bottom:20px;
+border-radius:5px;
+}
+
+/* Formulário */
+input, textarea{
+width:100%;
+padding:10px;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+button{
+padding:10px 20px;
+background:#333;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+/* RESPONSIVIDADE PARA CELULAR */
+
+@media (max-width:768px){
+
+/* menu vira coluna */
+nav{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+/* links do menu */
+nav a{
+margin:8px 0;
+}
+
+/* container ocupa quase toda a tela */
+.container{
+width:95%;
+}
+
+/* seções menores */
+section{
+padding:20px;
+}
+
+/* botão maior para toque */
+button{
+width:100%;
+}
+
+}
+
+/* botão do tema */
+#temaBtn{
+margin-left:20px;
+padding:8px 12px;
+background:white;
+color:black;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* TEMA ESCURO */
+.dark-mode{
+background:#121212;
+color:white;
+}
+
+.dark-mode section{
+background:#1e1e1e;
+}
+
+.dark-mode nav{
+background:#000;
+}
